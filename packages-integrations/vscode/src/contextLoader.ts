@@ -115,7 +115,7 @@ export class ContextLoader {
 
   async loadContextInDirectory(dir: string) {
     const cached = this.contextsMap.get(dir)
-    if (cached !== undefined)
+    if (cached !== undefined && cached !== null)
       return cached
 
     // Yarn PnP workflow, setup the PnP resolver
