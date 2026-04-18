@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const isDark = useDark()
+const isDark = useDark({ storageKey: 'unocss-inspector-theme' })
 
 // @ts-expect-error: Transition API
 const isAppearanceTransition = document.startViewTransition
